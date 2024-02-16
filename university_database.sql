@@ -66,3 +66,4 @@ commit;
 insert into faculty_detail values ( 01 , 'numbu' , 'babu' , 'dsbs' , '1434' , 200000 , 'associate professor');
 
 SELECT * from faculty_detail;
+

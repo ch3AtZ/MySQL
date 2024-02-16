@@ -1,3 +1,4 @@
+-- Active: 1705078993832@@127.0.0.1@3306@srm
 show databases;
 create database srm;
 use srm;
@@ -84,4 +85,7 @@ select count(*) FROM student;
 
 SELECT * from student where student_last_name = 'singh'
 
-#really need to test the visual studio code fucked up thing and nothing can be donne in the name of the coommand lol ADD
+#final checking of the program ADD
+
+
+SELECT * from faculty_detail;

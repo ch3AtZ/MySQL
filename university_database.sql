@@ -67,3 +67,17 @@ insert into faculty_detail values ( 01 , 'numbu' , 'babu' , 'dsbs' , '1434' , 20
 
 SELECT * from faculty_detail;
 
+insert into student(regno,student_first_name,student_last_name) values(00004,'advaith','hanumanchi'),(00005,'manas','raval') , 
+(00006,'arnav','shukla'),(00007,'subhashree','choudhary'),(00008,'bhargav','singh'),(00009,'sarthak','singh'),(00010,'abhiram','rongali'),(00011,'shivansh','chaitanya'),
+(00012,'durgesh','singh'),(00013,'lakshay','malik'),(00014,'sanidhya','sarda'),(00015,'gorema','bheeju'),(00016,'vidyut','jamal'),(00017,'akshay','thamban'),
+(00018,'asher','manoj'),(00019,'raghul','sarkar'),(00020,'aditya','singh'),(00021,'yash','dagar'),(00022,'kush','shakeel'),(00023,'aryan','sethi'),(00024,'aryan','bisht'),
+(00048,'aryan','singh'),(00025,'harshit','kamboj'),(00027,'srikanth','tiwari'),(00028,'dheeraj','tex'),(00029,'yash','wardhan'),(00030,'ankith','kumar'),(00031,'premansh','chanderiya'),
+(00032,'vanshika','singh'),(00033,'trisha','thakur'),(00034,'nah','meh'),(00035,'prachi','tiwari'),(00036,'deeksha','kajbaje'),(00037,'nevadhano','kaur'),(00038,'veer','singh'),
+(00039,'neera','singh'),(00040,'meera','sanhi'),(00041,'tiya','sharma'),(00042,'aakash','singh'),(00043,'sarthak','singh'),(00044,'vishesh','kumar'),(00045,'naman','rawat'),
+(00046,'mavav','bhasin'),(00047,'sonakshi','arora');
+
+select * from student;
+
+update student set course_id = 'cse w/s bct ' where course_id is NULL;
+
+select count(*) FROM student;

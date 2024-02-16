@@ -81,3 +81,5 @@ select * from student;
 update student set course_id = 'cse w/s bct ' where course_id is NULL;
 
 select count(*) FROM student;
+
+SELECT * from student where student_last_name = 'singh'

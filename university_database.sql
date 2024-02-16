@@ -83,3 +83,5 @@ update student set course_id = 'cse w/s bct ' where course_id is NULL;
 select count(*) FROM student;
 
 SELECT * from student where student_last_name = 'singh'
+
+#really need to test the visual studio code fucked up thing and nothing can be donne in the name of the coommand lol ADD

@@ -89,3 +89,15 @@ SELECT * from student where student_last_name = 'singh'
 
 
 SELECT * from faculty_detail;
+
+UPDATE student  SET  course_id = 'cse w/s ai bct' WHERE course_id is NULL ;
+
+SELECT * FROM course_details;
+
+INSERT INTO course_details VALUES('Computer Science Engieering with specialization in Cloud Computing' , '160' , 'CSE0003' , 'cse w/s cc' , 450000) , 
+('Computer Science Engieering with specialization in Big Data Analytics' , '160' , 'CSE0004' , 'cse w/s bda' , 450000) , 
+('Computer Science Engieering with specialization in Gaming Technology' , '160' , 'CSE0005' , 'cse w/s gt' , 450000),
+('Computer Science Engieering Core' , '160' , 'CSE0006' , 'cse core' , 450000);
+
+UPDATE student set course_id = 'cse core' where course_id = 'cse w/s core';
+

@@ -110,37 +110,24 @@ SELECT s.regno , s.student_first_name , s.course_id from student s;
 SELECT  c.course_name , c.course_id from course_details c;
 
 select s.regno ,  s.student_first_name , c.course_name from student s join course_details c on s.course_id = c.course_id;
-
 SELECT * from subject_details;
-
 SELECT s.subject_name , c.course_name from subject_details s join course_details c on s.subject_id = c.subject_id;
-
-
-
 create Procedure getstudents()
 begin
 select * from student order by student.regno;
 END ;
-
 create Procedure getsubjectdetails()
 begin select * from subject_details ORDER BY subject_id ; end;
-
 create Procedure getcoursedetails()
 begin select * from course_details ORDER BY  course_id ; end;
-
 CREATE Procedure getfacultydetails()
 begin SELECT * from faculty_detail order by faculty_id ; end;
-
 CREATE Procedure getstudentsbylastname(in lastname varchar(20))
 begin select * from student where lastname = student_last_name; end;
-
 call getstudentsbylastname('Singh')
-
 create Procedure getstudentbycourseid(in courseid varchar(20))
 begin select * from student where courseid = course_id ; end;
-
 call getstudentbycourseid('cse w/s bct');
-
 call getstudents();
 select * from student where course_id in('cse w/s bct ');
 
@@ -162,3 +149,7 @@ call getcountcourseid('cse w/s bct',@total);
 SELECT @total;
 
 show PROCEDURE status where db = 'srm';
+
+select * from student inner join course_details using (course_id);
+
+

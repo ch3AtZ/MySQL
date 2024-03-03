@@ -153,3 +153,8 @@ show PROCEDURE status where db = 'srm';
 select * from student inner join course_details using (course_id);
 
 
+
+call getcountcourseid('cse w/s ai ml ',@total);
+SELECT @total;
+
+SELECT * from student;

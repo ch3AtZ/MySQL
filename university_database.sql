@@ -158,3 +158,4 @@ call getcountcourseid('cse w/s ai ml ',@total);
 SELECT @total;
 
 SELECT * from student;
+
